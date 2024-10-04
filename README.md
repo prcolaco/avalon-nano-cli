@@ -14,7 +14,7 @@ $ go install github.com/prcolaco/avalon-nano-cli@latest
 
 ## Download
 
-Check the [releases](releases) page for binaries for your OS and architecture.
+Check the [releases](https://github.com/prcolaco/avalon-nano-cli/releases) page for binaries for your OS and architecture.
 
 ## Build
 
