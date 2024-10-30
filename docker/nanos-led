@@ -1,0 +1,17 @@
+#!/bin/sh
+
+prog=$(basename $0)
+
+mode="$1"
+[ "$mode" == "" ] && {
+	echo "usage: $prog off | fixed | flash | pulse | loop"
+	exit 1
+}
+
+for nano in 1 2 3 4
+do
+	/usr/local/bin/avalon-nano-cli led mode "10.255.250.$nano" "$mode"
+done
+
+exit 0
+
